@@ -65,7 +65,28 @@ h1, h2, p, .social-links a, .qr-container p {
 }
 
 .qr-container {
+    margin-top: 20px;
+    padding: 15px;
     background: var(--qr-bg);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.qr-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.qr-link:hover {
+    transform: scale(1.05);
+}
+
+.qr-code {
+    width: 100px; /* Reduced from 150px */
+    height: 100px; /* Added to maintain aspect ratio */
+    padding: 5px; /* Reduced padding */
+    background: white;
+    border-radius: 8px;
 }
 
 /* Theme Toggle Styles */
