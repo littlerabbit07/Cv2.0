@@ -82,8 +82,8 @@ h1, h2, p, .social-links a, .qr-container p {
 }
 
 .qr-code {
-    width: 100px; /* Reduced from 150px */
-    height: 100px; /* Added to maintain aspect ratio */
+    width: 50px; /* Reduced from 150px */
+    height: 50px; /* Added to maintain aspect ratio */
     padding: 5px; /* Reduced padding */
     background: white;
     border-radius: 8px;
