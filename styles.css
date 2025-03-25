@@ -105,3 +105,47 @@ h1, h2, p, .social-links a, .qr-container p {
 }
 
 /* Rest of your existing styles... */
+/* Add these styles to your existing CSS */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    cursor: pointer;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--social-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.toggle-label:hover {
+    background: var(--social-hover);
+    transform: scale(1.1);
+}
+
+.toggle-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-icon {
+    transform: rotate(180deg);
+}
+
+/* Update your profile-container to have relative positioning */
+.profile-container {
+    position: relative;
+    /* rest of your existing profile-container styles */
+}
